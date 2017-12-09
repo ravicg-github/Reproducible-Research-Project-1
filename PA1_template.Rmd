@@ -3,7 +3,7 @@
 title: "Reproducible Research Week 2 - Project 1"
 author: "Ravi C"
 date: "December 4, 2017"
-output: html_document
+output: rmarkdown::github_document
 ---
 ## 1.Code for reading in the dataset and/or processing the data 
  
