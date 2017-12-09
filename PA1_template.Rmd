@@ -35,7 +35,8 @@ hist(x=everydaytotal,
      xlab="Daily total steps",
      ylab="Frequency",
      main="The distribution of daily total (missing data ignored)")
-
+dev.copy(png, file="DailyTotalStepsHist.png", height=480, width=480) 
+dev.off() 
 ```
 ## 3.Mean and median number of steps taken each day
 ```{r}
@@ -55,6 +56,8 @@ with(dataframe_everydayaverage,
           type="l",
           xlab="5-minute intervals",
           ylab="average steps in the interval across all days"))
+dev.copy(png, file="everdayaverage.png", height=480, width=480) 
+dev.off() 
 ```
 
 ## 5. which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -88,6 +91,8 @@ hist(x=new_everydaytotal,
      xlab="daily steps",
      ylab="frequency",
      main="The distribution of daily total (with missing data imputed)")
+dev.copy(png, file="dailytotalimputedHist.png", height=480, width=480) 
+dev.off()
 ```
 ```{r}
 mean(new_everydaytotal)
@@ -121,5 +126,7 @@ xyplot(steps ~ interval | factor(wk),
        type="l",
        lty=1,
        data=wk_df)
+dev.copy(png, file="xyplot.png", height=480, width=480) 
+dev.off()
 ```
 From the panel plot it looks like the weekday activities arise earlier than the weekends - weekday activities arise around 5~6am and weekend activities arise around 8am. We can also observe that from 10am to 5pm, the weekends have higher activity levels than the weekdays.
