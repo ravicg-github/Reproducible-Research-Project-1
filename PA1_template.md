@@ -103,7 +103,7 @@ with(dataframe_everydayaverage,
           ylab="average steps in the interval across all days"))
 ```
 
-![](PA1_template_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-6-1.png)
+![](unnamed-chunk-6-1.png)
 
 ``` r
 dev.copy(png, file="everdayaverage.png", height=480, width=480) 
@@ -170,7 +170,7 @@ hist(x=new_everydaytotal,
      main="The distribution of daily total (with missing data imputed)")
 ```
 
-![](PA1_template_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-11-1.png)
+![](unnamed-chunk-11-1.png)
 
 ``` r
 dev.copy(png, file="dailytotalimputedHist.png", height=480, width=480) 
@@ -237,7 +237,7 @@ xyplot(steps ~ interval | factor(wk),
        data=wk_df)
 ```
 
-![](PA1_template_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-15-1.png)
+![](unnamed-chunk-15-1.png)
 
 ``` r
 #dev.copy(png, file="xyplot.png", height=480, width=480) 
