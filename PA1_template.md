@@ -58,7 +58,7 @@ hist(x=everydaytotal,
      main="The distribution of daily total (missing data ignored)")
 ```
 
-![](PA1_template_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+![](unnamed-chunk-3-1.png)
 
 ``` r
 dev.copy(png, file="DailyTotalStepsHist.png", height=480, width=480) 
